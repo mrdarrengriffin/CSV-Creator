@@ -103,7 +103,6 @@
 	</form>
 	<?php require 'parts/footer.php'; ?>
 	</div>
-	<script src="features.js"></script>
 	<script>
 	features.init("#features","#itemPreview");
 	features.setFirstRowData('<?php echo addslashes(json_encode($firstRowData)); ?>');

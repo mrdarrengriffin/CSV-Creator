@@ -5,7 +5,7 @@
 		public $flash;
 		
 		public function __construct(){
-			$this->flash = $_SESSION['flash'];	
+			$this->flash = $_SESSION['flash'] ?: null;	
 			unset($_SESSION['flash']);
 		}
 		

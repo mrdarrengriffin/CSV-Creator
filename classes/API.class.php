@@ -1,4 +1,4 @@
-<?php
+	<?php
 	
 	Class API{
 		
@@ -10,6 +10,8 @@
 		public function __construct($shopUrl,$key){
 			$this->shopUrl = $shopUrl;
 			$this->apiKey = $key;
+			
+			if(!is_dir("api_data")){mkdir("api_data");}
 		}
 		
 		public function getRequestUrl($module,$params){

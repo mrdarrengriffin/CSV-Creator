@@ -13,6 +13,9 @@
 			$this->dataPath = $dataPath;
 			$this->filePath = $filePath;
 			
+			if(!is_dir($dataPath)){mkdir($dataPath);}
+			if(!is_dir($filePath)){mkdir($filePath);}
+			
 			$items = scandir($this->dataPath);
 			unset($items[0],$items[1]);
 			foreach($items as $i){

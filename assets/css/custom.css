@@ -1,0 +1,23 @@
+.item{}
+.item-image{
+	width:100px;
+	float:left;
+}
+.item-image img{
+	width:100%;
+}
+.item-content{}
+
+.item-content .item-title{
+	font-weight:bold;
+	display:block;
+}
+.item-content .item-price{
+	display:block;
+}
+.item-content .item-dimensions{
+	display:block;
+}
+body{
+	padding:20px 0;
+}

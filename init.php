@@ -16,7 +16,7 @@
 	
 	
 	$flash = new Flash;
-	$api = new API("http://shop.klsonline.co.uk/","E7SDRHYGVW4U2S1JNXXILAFQRG2GRXY6");
+	$api = new API("<PRESTASHOP ROOT URL>","<PRESTASHOP WEBSERVICE API KEY>");
 	$ih = new ItemHandler(ITEM_PATH);
 	$csv = new ParseCSV();
 	$prep = new Prepare();
